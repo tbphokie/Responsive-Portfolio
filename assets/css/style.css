@@ -1,0 +1,376 @@
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 24px;
+	background-image: url("../images/circles-and-roundabouts.png");
+	padding-bottom: 80px;	/* pad for width of fixed footer */
+	}
+
+
+header{
+	border-color: #cccccc;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #ffffff;
+	width: 100%;
+
+}
+
+#headername{	/* formatting my name */
+	background-color: #4aaaa5;
+	color: white;
+	padding: 20px;
+	width: 200px;
+	float: left;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 32px;
+	line-height: 40px;
+	position: relative;
+	left: 10%;
+
+}
+
+#headernav{	/* for About Portfolio Contact links */
+	background-color: #ffffff;
+	color: #777777;
+	line-height: 40px;
+	padding: 20px;
+	width: 90%;
+	
+	text-align: right;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 24px;
+
+}
+
+#headernav a{	/* remove underline and automatic coloring for links */
+	text-decoration: none;
+	color: #777777;
+	padding: 0px 10px;	
+
+}
+
+
+a:hover {
+    background-color: yellow;
+}
+
+a:active{
+	color: yellow;
+	background-color: pink;
+}
+
+h2{
+	color: #4aaaa5;
+	background-color: #ffffff;
+	line-height: 32px;
+	padding:20px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+article{
+	clear: both;
+
+	overflow: hidden;
+	padding-left: 10%;
+	width: 960px;
+
+}
+
+#main, #contact, #portfolio {
+	width: 650px;
+	position: relative;
+	top: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 15px;
+	background-color: #ffffff;	
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+	font-family: Arial, "helvetica Neue", Helvetica, sans-serif;
+	color: #777777;
+	float: left;
+	overflow: auto;
+	background-size: 100%;
+}
+
+hr{
+	width: 98%;
+}
+
+#contact{
+	
+	margin: auto;
+
+}
+#usrform{
+	padding: 10px;
+}
+
+#connect{
+	width: 270px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 1px;
+	float: left;
+	background-color: #ffffff;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer{	/* footer affixed to bottom of page */
+	clear: both;
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	background-color: #666666;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	line-height: 40px;
+	border-color: #4aaaa5;
+	border-top-width: 6px;
+	border-style: solid;
+
+}
+
+img {
+    float: left;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+img:hover {
+	outline: 5px solid gray;
+  	outline-offset: 2px;
+}
+
+.textInput{
+	width: 632px;
+}
+
+textarea{
+	width: 632px;
+	height: 246px;
+}
+
+button{
+	background-color: #4aaaa5;
+	color: white;
+	border: 1px #4aaaa5;
+	text-align: center;
+	padding: 5px 15px 5px 15px;
+}
+
+#links{	/* couldn't figure out how to align images to the the width of the hr */
+	float:left;
+	width: 98%;
+}
+
+
+.images{
+	float: left;
+	position: relative;
+	background-size: 100%;
+	width: 50%;
+}
+
+h3{
+	position: absolute;
+	top: 150px;
+	left: 10px;
+	width: 180px;	/* width of image minus padding and start */
+	color: white;
+	background-color: #4aaaa5;
+	line-height: 24px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px;
+
+}
+
+@media screen and (max-width: 980px) {
+	body{
+		width: 100%;
+	}
+    
+ 	article{
+		clear: both;
+
+		overflow: hidden;
+		padding-left: 5%;
+		width: 760px;
+
+
+	}
+	#headername{	/* formatting my name */
+		left: 5%;
+
+	}
+
+ 	#headernav{	/* for About Portfolio Contact links */
+		width: 67%;
+	} 
+  	#main, #portfolio, #contact{
+    	width: 40%;
+    	top: 20px;
+    }
+    #portfolio{
+    	clear:both;
+    }
+	#connect{
+		
+		width: 40%;
+		left: 10px;
+		top: 20px;
+	}
+	#contact{
+		left: 0px;
+	}
+	h2{
+		line-height: 28px;
+		padding: 16px;
+		font-size: 20px;
+	}
+	.images{
+		width: 100%;
+	}  
+	.textInput{
+		width: 95%;
+	}
+
+	textarea{
+		width: 95%;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body{
+		width: 100%;
+	}
+
+	h2{
+		line-height: 32px;
+		padding: 16px;
+		font-size: 24px;
+	}
+	article{
+	clear: both;
+
+	overflow: hidden;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 90%;
+
+	}
+	#headername{	/* formatting my name */
+	left: 5%;
+
+}
+ #headernav{	/* for About Portfolio Contact links */
+	width: 85%;
+	
+} 
+  #main, #portfolio, #contact{
+        	width: 90%;
+        	top: 20px;
+        }
+	#connect{
+		text-align: left;
+		width: 90%;
+		top: 30px;
+		left: 0px;
+		padding-bottom: 40px;
+	}
+
+	#portfolio{
+		clear:both;
+	}
+	.images{
+		width: 50%;
+		background-size: 50%;
+	} 
+
+	.textInput{
+		width: 95%;
+	}
+
+	textarea{
+		width: 95%;
+		height: 250px;
+	}
+}
+
+
+@media screen and (max-width: 640px) {
+	body{
+		width:100%;
+	}
+
+
+	h2{
+		line-height: 32px;
+		padding: 16px;
+		font-size: 24px;
+	}
+	article{
+	clear: both;
+
+	overflow: hidden;
+
+	width: 90%;
+
+	}
+	#headername{	/* formatting my name */
+	text-align: center;
+	left: 0px;
+	width: 100%;
+
+}
+ #headernav{	/* for About Portfolio Contact links */
+	width: 100%;
+	text-align: center;
+	
+} 
+  #main, #portfolio, #contact{
+        	width: 95%;
+        	top: 20px;
+        }
+	#connect{
+		text-align: left;
+		width: 95%;
+		top: 30px;
+		left: 0px;
+		padding-bottom: 40px;
+	}
+
+	.images{
+		zoom: 2;
+		display: block;
+		margin: auto;
+		height: auto;
+		max-height: 100%;
+		width: auto;
+		max-width: 100%;
+	}
+
+	.textInput{
+		width: 95%;
+	}
+
+	textarea{
+		width: 95%;
+		height: 250px;
+	}
+}

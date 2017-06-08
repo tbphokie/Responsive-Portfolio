@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<!-- Point to css files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Terri Pannell's Contact Info</title>
+	</head>
+
+
+	<body>
+		<!-- My header is divided into 3 sections: 1-"headername" to display my name, 2-"headernav" to show the About Portfolio and Contact links and 3- "fillspace" to move the navigation links from the right edge -->
+		<header>
+			<div id="headername">
+				Terri Pannell
+			</div>
+			<div id="headernav">
+				<a href="index.html">About          </a><a href="portfolio.html">Portfolio          </a><a href="#">Contact          </a>
+			</div>
+
+		</header>
+		<!-- My article section encompasses the main content area, called "contact", and the connect with me area called "connect" -->
+		<article>
+			<div id="contact">
+				<h2>Contact</h2>
+				<hr>
+				<div id="contactform">
+					<form id="usrform">
+						Name: <br>
+						<input type="text" name="firstlastname" placeholder="Jonh Smith" class="textInput"><br>
+						Email: <br>
+						<input type="text" name="email" placeholder="example@gmail.com" class="textInput"><br>
+						Message: <br>
+						<textarea name="message" form="usrform"></textarea><br>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		
+			<section id="connect">
+				<h2>Connect with Me</h2>
+				<ul>
+					<li><a href="https://github.com/tbphokie/Basic-Portfolio"><img src="assets/images/github.png" width="70" height="70" alt="Github"></a></li><li><a href="https://www.linkedin.com/in/terri-pannell-56991385"><img src="assets/images/linkedin.png"  width="70" height="70" alt="LinkedIn"></a></li><li><a href="https://stackoverflow.com/users/7949064/terri-pannell"><img src="assets/images/stackoverflow.png"  width="70" height="70" alt="Stackoverflow"></a></li>
+				</ul>
+			</section>
+		</article>
+		<footer>
+			@ Copyright 2017 Terri Pannell
+		</footer>
+	</body>
+</html>
